@@ -1,0 +1,7 @@
+.overlay{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+}
+.hero{
+    transform: translate(-50%,-50%) scale(0.7);
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100% );
+}
