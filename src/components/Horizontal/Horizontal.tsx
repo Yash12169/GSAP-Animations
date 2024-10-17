@@ -2,9 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
-
 export default function Horizontal() {
   const sectionRef = useRef(null);
   const parentRef = useRef(null);
@@ -27,7 +25,6 @@ export default function Horizontal() {
         },
       }
     );
-
     return () => {
       pin.kill();
     };

@@ -1,8 +1,6 @@
-
 "use client"
 import { useEffect, useRef } from "react"
 import {gsap } from 'gsap'
-
 export default function SvgMe() {
     const path = "M 50 200 Q 300 200 1900 200";
     const pathRef = useRef(null)
@@ -35,7 +33,7 @@ export default function SvgMe() {
     },[])
   return (
     <div className="flex bg-black w-screen h-screen">
-        <svg ref={svgRef}  width={"800"} className=" bg-teal-600 h-[40vh] relative  w-screen flex justify-center items-center">
+        <svg ref={svgRef}  width={"800"} className="h-[40vh] relative  w-screen flex justify-center items-center">
             <path ref={pathRef} d={path} stroke="white" fill="transparent"/>
         </svg>
     </div>
